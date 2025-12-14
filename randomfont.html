@@ -1,0 +1,19 @@
+<body>
+	<button onclick="randomizeFont();">click meeeeee</button>
+	<p id="tester">oh hi there!</p>
+	<script>		
+		function randomizeFont() {
+			let tester = document.querySelector("#tester");
+			let randomNumber = Math.random(); // random number between 0 and 1
+			if (randomNumber < .3) {
+				tester.style.fontFamily = "sans-serif"
+				// example of changing variable axis settings too
+				// tester.style.fontVariationSettings = "'wght' 500, 'SRFF' 0";
+			} else if (randomNumber < .6) {
+				tester.style.fontFamily = "script"
+			} else {
+				tester.style.fontFamily = "monospace"
+			}
+		}
+	</script>
+</body>

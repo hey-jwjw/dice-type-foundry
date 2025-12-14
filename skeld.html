@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Type Foundry/Fonts/Skeld</title>
+	<link rel="stylesheet" href="assets/code/style.css">
+</head>
+
+<body>
+    <h1 class="header">
+        <a href="index.html" class="header-logo">
+			<span>dice</span>
+			<div class="header-dice"></div>
+			<span>type</span>
+		</a>
+		
+		<div class="h1-spacer"></div>
+		<!-- <a href="#" class="dice"><span class="dot"></span></a> -->
+		<div class="h1-gap"></div>
+		<a href="Fonts.html" class="h1-link">Fonts</a>
+		<!-- <div class="h1-gap"></div>
+		<a href="#" class="h1-link">About</a> -->
+	</h1>
+
+    <div class="progress">
+      <div class="progress-container">
+        <div class="progress-inside" id="myBar"></div>
+      </div>
+    </div>
+
+
+    <div>
+        <div class="skeldtitle">
+            <img src="assets/image/gradient.svg">
+            <div class="title-text">SKELD</div>
+        </div>
+        <div class="secondtext" id="secondtext"> 
+            “SKELD” IS INSPIRED BY THE GAME “AMONG US.” IT IS A VARIABLE PIXEL TYPEFACE CONSISTED OF 2 AXES.
+        </div>
+
+        <p class="pangram" id="tester">
+        ABCDEFGHIJKLM<br>
+        NOPQRSTUVWXYZ<br>
+        abcdefghijklm<br>
+        nopqrstuvwxyz<br>
+        0123456789.,!?:;()""''*#/
+        </p>
+       
+         <div>
+	    <button onclick="changeFont(0);" class="fontBtn">REGULAR</button>
+	    <button onclick="changeFont(100)" class="fontBtn">FLOAT</button>
+        </div>
+
+    </div>
+
+    <div class="bg2">
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">CREW</div>a
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">BALLOON</div>b
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">CHERRIES</div>c
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">DOG</div>d
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">EGG</div>e
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">FUEL</div>f
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">GHOST</div>g
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">HEART</div>h
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">IMPOSTER</div>i
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">BANANA</div>j
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">KNIFE</div>k
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">LAPTOP</div>l
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">MUSHROOM</div>m
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">NODE</div>n
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">CROWN</div>o
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">PIZZA</div>p
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg"></div>q
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">RUNNN</div>r
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">SABOTAGE</div>s
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">TASK</div>t
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">UFO</div>u
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">VENT</div>v
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">WIFI</div>w
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">DEAD</div>x
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">YOUNG SPROUT</div>y
+        </div>
+        <div class="bg2-lowercase">
+            <div class="bg2-lowercase-msg">PLUNGER</div>z
+        </div>
+    </div>
+
+    <div class="bg3">
+        <div class="bg3-title">ttt TRY YOUR TEXT HERE ttt</div>
+        <p class="bg3-textbox" contenteditable="plaintext-only">TYPE HERE!</p>
+        <div>
+
+        <div class="sliders">
+
+        <div>
+		    <input name="font-size" type="range" min="1" max="150" value="32" oninput="setFontSize(this.value)">
+            <h2>FONT SIZE</h2>
+            <label for="font-size">CURRENT VALUE: <span id="current-font-size">32</span>px</label>
+        </div>
+
+        <div>
+		    <input name="line-height" type="range" min="-5" max="10" value="0" oninput="setLineHeight(this.value)">
+            <h2>LINE HEIGHT</h2>
+            <label for="line-height">CURRENT VALUE: <span id="current-line-height">0</span>px</label>
+        </div>
+        
+
+        <div>
+		    <input name="float" type="range" min="0" max="100" value="0" oninput="setFloat(this.value)">
+            <h2>AXIS</h2>
+            <label for="float">CURRENT VALUE: <span id="current-float">0</span>px</label>
+        </div>
+
+
+        </div>
+
+
+	</div>
+    </div>
+
+    <div class="bg4"></div>
+        <div></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

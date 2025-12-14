@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dice Type Foundry</title>
+	<link rel="stylesheet" href="assets/code/style.css">
+</head>
+
+<body>
+	<h1 class="header">
+
+		<a href="index.html" class="header-logo">
+			<span>dice</span>
+			<div class="header-dice"></div>
+			<span>type</span>
+		</a>
+		
+		<div class="h1-spacer"></div>
+
+		<div onclick="randomizeFont();" class="dice"><span class="dot"></span></div>
+
+		<div class="h1-gap"></div>
+
+		<a href="Fonts.html" class="h1-link">Fonts</a>
+
+		<!-- <div class="h1-gap"></div>
+
+		<a href="#" class="h1-link">About</a> -->
+	</h1>
+
+<div class="typehere-group">
+	<input id="tester" type="text" class="typehere" placeholder="type anything here..."/>
+	<script>		
+		function randomizeFont() {
+			let tester = document.querySelector("#tester");
+			let randomNumber = Math.random(); // random number between 0 and 1
+			if (randomNumber < .3) {
+				tester.style.fontFamily = "SKELD"
+				// example of changing variable axis settings too
+				// tester.style.fontVariationSettings = "'wght' 500, 'SRFF' 0";
+			} else if (randomNumber < .6) {
+				tester.style.fontFamily = "Tempoclub"
+			} else {
+				tester.style.fontFamily = "monospace"
+			}
+		}
+	</script>
+</div>
+
+	<video autoplay muted loop id="Dicevideo">
+		<source src="assets/image/Demo_dots and alphabet.mp4" type="video/mp4">
+	</video>
+
+	</div>
+
+<script src="script.js"></script>
+</html>
